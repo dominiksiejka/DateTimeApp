@@ -1,0 +1,14 @@
+{
+  "name": "9.-datetimeapp",
+  "version": "1.0.0",
+  "description": "DateTimeApp",
+  "main": "index.js",
+  "scripts": {
+    "nice": "http-server"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "author": "Dominik Siejka",
+  "license": "ISC"
+}
