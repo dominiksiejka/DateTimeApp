@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gorditas&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="cover-modal"></div>
+    <div id="container">
+      <header>
+        <h1 id="main-title">TimeRemaining App</h1>
+        <img id="main-image" src="images/default.jpg" alt="default image" />
+        <button id="tools"><i class="fas fa-tools"></i></button>
+      </header>
+      <main>
+        <h4 id="app-title">New Year time remaining:</h4>
+        <div class="time days">
+          <p class="time-value"></p>
+          <p class="time-type">days</p>
+        </div>
+        <div class="time hours">
+          <p class="time-value"></p>
+          <p class="time-type">hours</p>
+        </div>
+        <div class="time minutes">
+          <p class="time-value"></p>
+          <p class="time-type">minutes</p>
+        </div>
+        <div class="time seconds">
+          <p class="time-value"></p>
+          <p class="time-type">seconds</p>
+        </div>
+      </main>
+    </div>
+    <div id="tools-tab">
+      <h2>settings</h2>
+      <div class="date-name-contain color">
+        <label for="date-name">Name the event </label>
+        <input type="text" id="date-name" maxlength="50" />
+      </div>
+      <div class="date-data color">
+        <div class="day-input">
+          <label for="day-type">Day:</label
+          ><input id="day-type" type="number" />
+        </div>
+        <div class="month-input">
+          <label for="month-type">Month:</label
+          ><input id="month-type" type="number" />
+        </div>
+        <div class="year-input">
+          <label for="year-type">Year:</label
+          ><input id="year-type" type="number" />
+        </div>
+      </div>
+      <div class="date-image-contain color">
+        <label for="date-image">paste image url: </label>
+        <input id="date-image" type="text" />
+      </div>
+      <button id="submit-change">Submit</button>
+    </div>
+  </body>
+</html>
